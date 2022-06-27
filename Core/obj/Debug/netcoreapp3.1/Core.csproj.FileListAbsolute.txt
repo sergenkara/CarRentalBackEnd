@@ -1,0 +1,10 @@
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\sezer\Desktop\MyProject\CarRental\Core\obj\Debug\netcoreapp3.1\Core.pdb

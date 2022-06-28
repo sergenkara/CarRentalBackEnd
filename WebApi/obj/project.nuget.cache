@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MiSyZN9hFut0DTyILau1tb7QlRAhGxS1WHIXhOXjunpPMNNEIM3kbLHlqZSv8W1HSj8+xM0BmPPJ60KxUypD4g==",
+  "dgSpecHash": "a+UKEJ01oHethDWyDBJdN4wVZG7UzYs2pxavljNlUXScSpjeXxBs5D3UXPO5D+JblCiyXPkmS1mckffwB2kBZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\sezer\\Desktop\\MyProject\\CarRental\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\sezer\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\sezer\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\sezer\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
+    "C:\\Users\\sezer\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.12\\microsoft.aspnetcore.authentication.jwtbearer.3.1.12.nupkg.sha512",
     "C:\\Users\\sezer\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\sezer\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\sezer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

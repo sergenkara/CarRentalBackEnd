@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -17,5 +18,7 @@ namespace Business.Constants
         public static string BrandAdded = "Brand Added";
         public static string BrandUpdated = "Brand Updated";
         public static string BrandDeleted = "Brand Deleted";
+
+        public static string AuthorizationDenied="Yetkiniz Yok!";
     }
 }

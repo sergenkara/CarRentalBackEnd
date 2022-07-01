@@ -11,8 +11,7 @@ namespace Business.Abstract
     {
         IDataResult<List<CarImage>> GetAll();
         IDataResult<CarImage> Get(int id);
-        IResult Add(int carId ,IFormFile file);
-        IResult Update(CarImage carImage);
+        IResult Add(int carId ,IFormFile file);       
         IResult Delete(CarImage carImage);
 
     }

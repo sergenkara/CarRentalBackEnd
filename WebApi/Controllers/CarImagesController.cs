@@ -42,16 +42,7 @@ namespace WebApi.Controllers
             }
             return BadRequest(result);
         }
-        [HttpPost("update")]
-        public IActionResult Update(CarImage carImage)
-        {
-            var result = _carImageService.Update(carImage);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
+       
         [HttpGet("getall")]
         public IActionResult GetAll()
         {

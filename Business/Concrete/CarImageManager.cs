@@ -40,11 +40,17 @@ namespace Business.Concrete
             }
             return new SuccessResult(Messages.CarImageAdded);
         }
+        
 
         public IResult Delete(CarImage carImage)
         {
-            _carImageDal.Delete(carImage);
-            return new SuccessResult(Messages.CarImageDeleted);
+            var result = _fileService.ImageDelete(carImage.ImagePath);
+            if (result.Success)
+            {
+                _carImageDal.Delete(carImage);
+                return new SuccessResult(Messages.CarImageDeleted);
+            }
+            return new ErrorResult("Silinemedi");
         }
 
         public IDataResult<CarImage> Get(int id)
@@ -56,12 +62,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll());
         }
-
-        public IResult Update(CarImage carImage)
-        {
-            _carImageDal.Update(carImage);
-            return new SuccessResult(Messages.CarImageUpdated);
-        }
+       
 
         public IResult CheckImageCount(int carId)
         {

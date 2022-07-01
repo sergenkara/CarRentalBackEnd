@@ -36,10 +36,20 @@ namespace WebApi.Controllers
 
             return BadRequest(result);
         }
-        [HttpPost]
-        public IActionResult Add(Car car)
+        [HttpGet("getcardetail")]
+        public IActionResult GetCarDetail(int carId)
         {
-            //ValidationTool.Validate(new CarValidator(),car);
+            var result = _carService.GetCarDetail(carId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result);
+        }
+        [HttpPost("add")]
+        public IActionResult Add(Car car)
+        {           
             var result = _carService.Add(car);
             if (result.Success)
             {

@@ -19,6 +19,12 @@ namespace Business.Constants
         public static string BrandUpdated = "Brand Updated";
         public static string BrandDeleted = "Brand Deleted";
 
+        public static string CarImageAdded = "CarImage Added";
+        public static string CarImageUpdated = "CarImage Updated";
+        public static string CarImageDeleted = "CarImage Deleted";
+
+        public static string CarImageCountError = "can have up to 5 images";
+
         public static string AuthorizationDenied="Yetkiniz Yok!";
     }
 }

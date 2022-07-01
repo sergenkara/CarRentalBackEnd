@@ -10,6 +10,7 @@ using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -26,18 +27,18 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
-        [SecuredOperation("car.add,admin")]
+        [CacheRemoveAspect("ICarService.Get")]
+        [SecuredOperation("admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
-        {
+        {           
             
-            /*IResult result = BusinessRules.Run(foksiyon1, fonksiyon2); 
-             if(result != null){ return result;}
-             */
             _carDal.Add(car);
             return new SuccessResult(Messages.CarAdded);
         }
 
+        [CacheRemoveAspect("ICarService.Get")]
+        [SecuredOperation("admin")]        
         public IResult Delete(Car car)
         {
             _carDal.Delete(car);
@@ -55,6 +56,14 @@ namespace Business.Concrete
             return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == carId));
         }
 
+        public IDataResult<CarDetailDto> GetCarDetail(int carId)
+        {
+            return new SuccessDataResult<CarDetailDto>(_carDal.GetCarDetail(carId));
+        }
+
+        [CacheRemoveAspect("ICarService.Get")]
+        [SecuredOperation("admin")]
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Update(Car car)
         {
             _carDal.Update(car);
